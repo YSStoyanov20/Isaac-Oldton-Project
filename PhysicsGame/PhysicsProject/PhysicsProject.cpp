@@ -110,6 +110,42 @@ void FrictionForce()
     std::cout << "Friction = " << friction << std::endl;
     Sleep(4000);
 }
+
+void ArchimedPrinciple()
+{
+    double Rho, Volume, EarthAcceleration = 10, ArchimedPrinciple;
+    std::cout << "Enter Rho: ";
+    std::cin >> Rho;
+    std::cout << "Enter Volume: ";
+    std::cin >> Volume;
+    ArchimedPrinciple = Rho * Volume * EarthAcceleration;
+    std::cout << "Buoyant force = " << ArchimedPrinciple << " Newtons" << std::endl;
+    Sleep(4000);
+}
+
+void FreeFall()
+{
+    double time, EarthAcceleration = 10, Distance, Velocity;
+    std::cout << "Enter time: ";
+    std::cin >> time;
+    Velocity = time * EarthAcceleration;
+    Distance = (EarthAcceleration * (time * time)) / 2;
+    std::cout << "Free fall velocity = " << Velocity << " Meters per second" << std::endl;
+    std::cout << "Free fall distance = " << Distance << " Meters" << std::endl;
+    Sleep(4000);
+}
+
+void Mechanicalwork()
+{
+    double MechanicalWork, Friction, Distance;
+    std::cout << "Enter Friction: ";
+    std::cin >> Friction;
+    std::cout << "Enter Distance: ";
+    std::cin >> Distance;
+    MechanicalWork = Friction * Distance;
+    std::cout << "Mechanical work = " << MechanicalWork << " Joules" << std::endl;
+    Sleep(4000);
+}
 //end of calculating functions;
 
 //Dynamic Menu functions
@@ -233,7 +269,7 @@ void CalcMenu()
                 FrictionForce();
                 system("CLS");
             }
-            
+
             if (counter1 == 9)
             {
                 SetColors1[0] = 7;

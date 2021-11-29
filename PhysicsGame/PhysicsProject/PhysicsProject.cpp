@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <windows.h>
 #include "front-end.h"
+#include "Game.h"
 
 //calculating functions;
 void Exit()
@@ -232,10 +233,12 @@ void CalcMenu()
                 FrictionForce();
                 system("CLS");
             }
+            
             if (counter1 == 9)
             {
-                SetColors1[0] == 7;
+                SetColors1[0] = 7;
                 Exit();
+                homeScreen();
                 break;
             }
         }

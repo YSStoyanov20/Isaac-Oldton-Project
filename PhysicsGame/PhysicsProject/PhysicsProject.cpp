@@ -146,6 +146,68 @@ void Mechanicalwork()
     std::cout << "Mechanical work = " << MechanicalWork << " J" << std::endl;
     Sleep(5000);
 }
+
+void MechanicalPower()
+{
+    double Work, time, Power;
+    std::cout << "Enter Work: ";
+    std::cin >> Work;
+    std::cout << "Enter time: ";
+    std::cin >> time;
+    Power = Work / time;
+    std::cout << "Mechanical power = " << Power << " W" << std::endl;
+    Sleep(5000);
+}
+
+void PotentialEnergy()
+{
+    double Mass, EarthAcceleration = 10, height, Energy;
+    std::cout << "Enter mass: ";
+    std::cin >> Mass;
+    std::cout << "Enter height: ";
+    std::cin >> height;
+    Energy = Mass * EarthAcceleration * height;
+    std::cout << "Potential energy = " << Energy << " J" << std::endl;
+    Sleep(5000);
+}
+
+void HydrostaticPressure()
+{
+    double Rho, EarthAcceleration = 10, height, HydroRho;
+    std::cout << "Enter rho: ";
+    std::cin >> Rho;
+    std::cout << "Enter height: ";
+    std::cin >> height;
+    HydroRho = Rho * EarthAcceleration * height;
+    std::cout << "Hydrostatic pressure = " << HydroRho << " kg/m^3" << std::endl;
+    Sleep(5000);
+}
+
+void Density()
+{
+    double Mass, Volume, Density;
+    std::cout << "Enter mass: ";
+    std::cin >> Mass;
+    std::cout << "Enter volume: ";
+    std::cin >> Volume;
+    Density = Mass / Volume;
+    std::cout << "Density = " << Density << " kg/m^3" << std::endl;
+    Sleep(5000);
+}
+
+void LenzLaw()
+{
+    double Ampers, Resistance, time, LenzLaw;
+    std::cout << "Enter ampers: ";
+    std::cin >> Ampers;
+    std::cout << "Enter resitance: ";
+    std::cin >> Resistance;
+    std::cout << "Enter time: ";
+    std::cin >> time;
+    LenzLaw = (Ampers * Ampers) * Resistance * time;
+    std::cout << "Density = " << LenzLaw << " J" << std::endl;
+    Sleep(5000);
+}
 //end of calculating functions;
 
 //Dynamic Menu functions

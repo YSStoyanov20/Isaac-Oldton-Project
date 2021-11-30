@@ -1,7 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
-#include "front-end.h"
+#include "Front-end.h"
 #include "Game.h"
 
 //calculating functions;
@@ -303,6 +303,7 @@ void CalcMenu()
             {
                 SetColors1[0] = 7;
                 Exit();
+                color(7);
                 homeScreen();
                 break;
             }

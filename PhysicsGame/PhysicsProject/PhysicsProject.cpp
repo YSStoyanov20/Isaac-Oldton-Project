@@ -18,7 +18,7 @@ void Acceleration()
     std::cin >> Velocity1;
     std::cout << "Enter Velocity 0: ";
     std::cin >> Velocity0;
-    std::cout << "Enter time: ";
+    std::cout << "Enter Time: ";
     std::cin >> time;
     Acceleration = (Velocity1 - Velocity0) / time;
     std::cout << "Acceleration = " << Acceleration << " m/s" << std::endl;
@@ -28,7 +28,7 @@ void Acceleration()
 void KineticEnergy()
 {
     double Mass, velocity, Energy;
-    std::cout << "Enter mass: ";
+    std::cout << "Enter Mass: ";
     std::cin >> Mass;
     std::cout << "Enter Velocity: ";
     std::cin >> velocity;
@@ -40,11 +40,11 @@ void KineticEnergy()
 void MechanicalEnergy()
 {
     double Mass, velocity, height, Energy;
-    std::cout << "Enter mass: ";
+    std::cout << "Enter Mass: ";
     std::cin >> Mass;
-    std::cout << "Enter velocity: ";
+    std::cout << "Enter Velocity: ";
     std::cin >> velocity;
-    std::cout << "Enter height: ";
+    std::cout << "Enter Height: ";
     std::cin >> height;
     Energy = (Mass * (velocity * velocity)) / 2 + Mass * 10 * height;
     std::cout << "Mechanical Energy = " << Energy << " J" << std::endl;
@@ -90,9 +90,9 @@ void Pressure()
 void Distance()
 {
     double Velocity, time, Displacement;
-    std::cout << "Enter velocity: ";
+    std::cout << "Enter Velocity: ";
     std::cin >> Velocity;
-    std::cout << "Enter time: ";
+    std::cout << "Enter Time: ";
     std::cin >> time;
     Displacement = Velocity * time;
     std::cout << "Displacement = " << Displacement << " m" << std::endl;
@@ -102,7 +102,7 @@ void Distance()
 void FrictionForce()
 {
     double coefficient, Newtons, friction;
-    std::cout << "Enter coefficient: ";
+    std::cout << "Enter Coefficient: ";
     std::cin >> coefficient;
     std::cout << "Enter Newtons: ";
     std::cin >> Newtons;
@@ -114,12 +114,12 @@ void FrictionForce()
 void ArchimedPrinciple()
 {
     double Rho, Volume, EarthAcceleration = 10, ArchimedPrinciple;
-    std::cout << "Enter Rho: ";
+    std::cout << "Enter Density: ";
     std::cin >> Rho;
     std::cout << "Enter Volume: ";
     std::cin >> Volume;
     ArchimedPrinciple = Rho * Volume * EarthAcceleration;
-    std::cout << "Buoyant force = " << ArchimedPrinciple << " N" << std::endl;
+    std::cout << "Buoyant Force = " << ArchimedPrinciple << " N" << std::endl;
     Sleep(5000);
 }
 
@@ -130,8 +130,8 @@ void FreeFall()
     std::cin >> time;
     Velocity = time * EarthAcceleration;
     Distance = (EarthAcceleration * (time * time)) / 2;
-    std::cout << "Free fall velocity = " << Velocity << " m/s" << std::endl;
-    std::cout << "Free fall distance = " << Distance << " m" << std::endl;
+    std::cout << "Free Fall Velocity = " << Velocity << " m/s" << std::endl;
+    std::cout << "Free Fall Distance = " << Distance << " m" << std::endl;
     Sleep(5000);
 }
 
@@ -143,7 +143,7 @@ void Mechanicalwork()
     std::cout << "Enter Distance: ";
     std::cin >> Distance;
     MechanicalWork = Friction * Distance;
-    std::cout << "Mechanical work = " << MechanicalWork << " J" << std::endl;
+    std::cout << "Mechanical Work = " << MechanicalWork << " J" << std::endl;
     Sleep(5000);
 }
 
@@ -152,7 +152,7 @@ void MechanicalPower()
     double Work, time, Power;
     std::cout << "Enter Work: ";
     std::cin >> Work;
-    std::cout << "Enter time: ";
+    std::cout << "Enter Time: ";
     std::cin >> time;
     Power = Work / time;
     std::cout << "Mechanical power = " << Power << " W" << std::endl;
@@ -162,9 +162,9 @@ void MechanicalPower()
 void PotentialEnergy()
 {
     double Mass, EarthAcceleration = 10, height, Energy;
-    std::cout << "Enter mass: ";
+    std::cout << "Enter Mass: ";
     std::cin >> Mass;
-    std::cout << "Enter height: ";
+    std::cout << "Enter Height: ";
     std::cin >> height;
     Energy = Mass * EarthAcceleration * height;
     std::cout << "Potential energy = " << Energy << " J" << std::endl;
@@ -174,7 +174,7 @@ void PotentialEnergy()
 void HydrostaticPressure()
 {
     double Rho, EarthAcceleration = 10, height, HydroRho;
-    std::cout << "Enter rho: ";
+    std::cout << "Enter Density: ";
     std::cin >> Rho;
     std::cout << "Enter height: ";
     std::cin >> height;
@@ -186,9 +186,9 @@ void HydrostaticPressure()
 void Density()
 {
     double Mass, Volume, Density;
-    std::cout << "Enter mass: ";
+    std::cout << "Enter Mass: ";
     std::cin >> Mass;
-    std::cout << "Enter volume: ";
+    std::cout << "Enter Volume: ";
     std::cin >> Volume;
     Density = Mass / Volume;
     std::cout << "Density = " << Density << " kg/m^3" << std::endl;
@@ -198,11 +198,11 @@ void Density()
 void LenzLaw()
 {
     double Ampers, Resistance, time, LenzLaw;
-    std::cout << "Enter ampers: ";
+    std::cout << "Enter Ampers: ";
     std::cin >> Ampers;
-    std::cout << "Enter resitance: ";
+    std::cout << "Enter Resitance: ";
     std::cin >> Resistance;
-    std::cout << "Enter time: ";
+    std::cout << "Enter Time: ";
     std::cin >> time;
     LenzLaw = (Ampers * Ampers) * Resistance * time;
     std::cout << "Density = " << LenzLaw << " J" << std::endl;
@@ -227,7 +227,7 @@ void gotoxy(int x, int y)
 
 void CalcMenu()
 {
-    int SetColors1[] = { 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7 }; // DEFAULT COLORS
+    int SetColors1[] = { 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7 }; // DEFAULT COLORS
     int counter1 = 3;
     char key1;
 
@@ -280,15 +280,35 @@ void CalcMenu()
 
         gotoxy(0, 12);
         color(SetColors1[11]);
+        std::cout << "12. Mechanical Power" << std::endl;
+
+        gotoxy(0, 13);
+        color(SetColors1[12]);
+        std::cout << "13. Mechanical Energy" << std::endl;
+
+        gotoxy(0, 14);
+        color(SetColors1[13]);
+        std::cout << "14. Hydrostatic Pressure" << std::endl;
+
+        gotoxy(0, 15);
+        color(SetColors1[14]);
+        std::cout << "15. Density" << std::endl;
+
+        gotoxy(0, 16);
+        color(SetColors1[15]);
+        std::cout << "16. Lenz's Law" << std::endl;
+
+        gotoxy(0, 17);
+        color(SetColors1[16]);
         std::cout << "Return" << std::endl;
 
         key1 = _getch();//getting the arrow key input
 
-        if (key1 == 72 && (counter1 >= 2 && counter1 <= 13))//72 is for the up arrow
+        if (key1 == 72 && (counter1 >= 2 && counter1 <= 17))//72 is for the up arrow
         {
             counter1--;
         }
-        if (key1 == 80 && (counter1 >= 1 && counter1 <= 11))//80 is for the down arrow
+        if (key1 == 80 && (counter1 >= 1 && counter1 <= 16))//80 is for the down arrow
         {
             counter1++;
         }
@@ -363,6 +383,36 @@ void CalcMenu()
             }
             if (counter1 == 12)
             {
+                system("CLS");
+                MechanicalPower();
+                system("CLS");
+            }
+            if (counter1 == 13)
+            {
+                system("CLS");
+                PotentialEnergy();
+                system("CLS");
+            }
+            if (counter1 == 14)
+            {
+                system("CLS");
+                HydrostaticPressure();
+                system("CLS");
+            }
+            if (counter1 == 15)
+            {
+                system("CLS");
+                Density();
+                system("CLS");
+            }
+            if (counter1 == 16)
+            {
+                system("CLS");
+                LenzLaw();
+                system("CLS");
+            }
+            if (counter1 == 17)
+            {
                 SetColors1[0] = 7;
                 Exit();
                 color(7);
@@ -384,6 +434,10 @@ void CalcMenu()
         SetColors1[10] = 7;
         SetColors1[11] = 7;
         SetColors1[12] = 7;
+        SetColors1[13] = 7;
+        SetColors1[14] = 7;
+        SetColors1[15] = 7;
+        SetColors1[16] = 7;
 
 
         //if our counter equals to one of the corresponding numbers for the menu the color is changed to green which is 10
@@ -435,10 +489,28 @@ void CalcMenu()
         {
             SetColors1[11] = 10;
         }
+        if (counter1 == 13)
+        {
+            SetColors1[12] = 10;
+        }
+        if (counter1 == 14)
+        {
+            SetColors1[13] = 10;
+        }
+        if (counter1 == 15)
+        {
+            SetColors1[14] = 10;
+        }
+        if (counter1 == 16)
+        {
+            SetColors1[15] = 10;
+        }
+        if (counter1 == 17)
+        {
+            SetColors1[16] = 10;
+        }
     }
 }
-
-
 
 void DynamicMenu()
 {

@@ -108,9 +108,3 @@ void game()
     checkHealth(health);
 
 }
-
-int main()
-{
-    system("mode 700");
-    game();
-}

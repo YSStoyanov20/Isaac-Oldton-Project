@@ -456,6 +456,7 @@ void DynamicMenu()
 
 int main()
 {
+    system("mode 700");
     homeScreen();
     DynamicMenu();
 }

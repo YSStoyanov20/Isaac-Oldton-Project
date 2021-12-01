@@ -1,7 +1,4 @@
-#include "Front-end.h"
-#include "Game.h"
-#include "Calculations.h"
-
+#include "Functions.h"
 
 int main()
 {

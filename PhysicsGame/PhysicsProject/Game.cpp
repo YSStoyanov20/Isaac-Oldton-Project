@@ -2,6 +2,7 @@
 #include <string>
 #include <time.h>
 #include <windows.h>
+#include "Functions.h"
 
 
 struct QUESTIONS {
@@ -84,7 +85,7 @@ void game()
     srand(time(NULL));
 
     for (int i = 0; i <= 9; i++)
-    {   
+    {
         PrintWizard();
         int rng = rand() % 10;
 

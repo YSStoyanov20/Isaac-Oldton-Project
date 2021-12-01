@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Windows.h>
+#include "Functions.h"
 
 void Acceleration()
 {
@@ -45,7 +46,7 @@ void Electricity()
 {
     double Watt, Voltage, Ampers;
     std::cout << "Enter Watts: ";
-    std::cin >> Watt; 
+    std::cin >> Watt;
     std::cout << "Enter Voltage: ";
     std::cin >> Voltage;
     Ampers = Watt / Voltage;

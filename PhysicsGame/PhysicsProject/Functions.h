@@ -6,20 +6,21 @@
 #include <string>
 #include <time.h>
 
-
+// Calculator & Game Functions
 void CalcMenu();
 void PrintWizard();
 void checkHealth(int health);
 void game();
 void guide();
-void WinScreen();
 
+// Menu Functions & Loading screen
 void LoadingScreen();
 void homeScreen();
 void DynamicMenu();
 void gotoxy(int x, int y);
 void color(int color);
 
+// Calculating Functions
 void Acceleration();
 void KineticEnergy();
 void MechanicalEnergy();

@@ -420,7 +420,7 @@ void DynamicMenu()
 
         gotoxy(0, 12);
         color(SetColors[3]);
-        std::cout << " 3. Exit" << std::endl;
+        std::cout << " 4. Exit" << std::endl;
 
 
         key = _getch();
@@ -451,8 +451,9 @@ void DynamicMenu()
             {
                 system("CLS");
                 guide();
+                homeScreen();
             }
-            if (counter == 3)
+            if (counter == 4)
             {
                 system("CLS");
                 break;

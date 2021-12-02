@@ -70,32 +70,58 @@ void boothUpScreen()
 {
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 9);
     std::cout << std::endl;
-    std::cout << "\t              &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl;
+    std::cout << "\t              &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl; 
+    Sleep(200);
     std::cout << "\t             &&&&&&&&&&&&&&&&&&&&&&***********************            " << std::endl;
+    Sleep(200);
     std::cout << "\t            &&&&                                       ****           " << std::endl;
+    Sleep(200);
     std::cout << "\t           &&&&    &&&&&&&&&&&&&&&&*****************    ****          " << std::endl;
+    Sleep(200);
     std::cout << "\t           &&&    &&&&&&&&&&&&&&&&&******************    ***          " << std::endl;
+    Sleep(200);
     std::cout << "\t          &&&.   &&&&&&&&******&&&&*****&&&&&&********   ,***         " << std::endl;
+    Sleep(200);
     std::cout << "\t         &&&&   &&&&&&&&**&&&&&***/*%&&&*****&&********   ****        " << std::endl;
+    Sleep(200);
     std::cout << "\t        &&&&   &&&&&&&&&**&&&&&&&&*%&********&&*********   ****       " << std::endl;
+    Sleep(200);
     std::cout << "\t       &&&&    &&&&&&&&&**&&&&&&&&&*,********&&*********    ****      " << std::endl;
+    Sleep(200);
     std::cout << "\t      .&&&    &&&&&&&&&&*******&&&   ***&&&&&&&,*********    ***      " << std::endl;
+    Sleep(200);
     std::cout << "\t      &&&    &&&&&*****&&***&**&&&   ***&&*&&%**&&&&&*****    ***     " << std::endl;
+    Sleep(200);
     std::cout << "\t     &&&&   &&&&**&&&&&&&&%***&&&&   ****&&&*********&&****   ****    " << std::endl;
+    Sleep(200);
     std::cout << "\t    &&&&   &&&&&***&&&&&&&****&&&&   ****&&&&*******&&&*****   ****   " << std::endl;
+    Sleep(200);
     std::cout << "\t   &&&&   &&&&&&&&%*****&***&***&&   **&&&*&&&*&&&&&********,   ****  " << std::endl;
+    Sleep(200);
     std::cout << "\t  &&&&    &&&&&&&&&&&&&&#******&&     **&&&&&&/**************    **** " << std::endl;
+    Sleep(200);
     std::cout << "\t  &&&    &&&&&&&&&&&&&&&**&&&&&&****&&&******&&***************    *** " << std::endl;
+    Sleep(200);
     std::cout << "\t &&&&       &&&&&&&&&&&&**&&&&&&&&*%&********&&************       ****" << std::endl;
+    Sleep(200);
     std::cout << "\t   &&&&&&      &&&&&&&&&**&&&&&***&**&&&*****&&*********      ******  " << std::endl;
+    Sleep(200);
     std::cout << "\t      &&&&&&      .&&&&&&******&&&&*****&&&&&&******       ******     " << std::endl;
+    Sleep(200);
     std::cout << "\t          &&&&&&      &&&&&&&&&&&&&**************      ******         " << std::endl;
+    Sleep(200);
     std::cout << "\t             &&&&&&      &&&&&&&&&&**********,      ******            " << std::endl;
+    Sleep(200);
     std::cout << "\t                *&&&&&(      &&&&&&*******      ,*****                " << std::endl;
+    Sleep(200);
     std::cout << "\t                    &&&&&&      &&&****      ******                   " << std::endl;
+    Sleep(200);
     std::cout << "\t                       &&&&&&             ******                      " << std::endl;
+    Sleep(200);
     std::cout << "\t                           &&&&&&     ******                          " << std::endl;
+    Sleep(200);
     std::cout << "\t                              &&&&&******                             " << std::endl;
+    Sleep(200);
     std::cout << "\t                                  &**                                 " << std::endl << std::endl;
 
     load();
@@ -397,6 +423,7 @@ void CalcMenu()
         }
     }
 }
+
 // Dynamic Main Menu
 void DynamicMenu()
 {
@@ -467,7 +494,7 @@ void DynamicMenu()
         SetColors[4] = 7;
 
 
-        //if our counter equals to one of the corresponding numbers for the menu the color is changed to green which is 12
+        //if our counter equals to one of the corresponding numbers for the menu the color is changed to green which is 10
         if (counter == 1)
         {
             SetColors[0] = 10;

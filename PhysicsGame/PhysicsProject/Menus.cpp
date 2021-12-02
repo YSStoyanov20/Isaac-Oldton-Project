@@ -20,6 +20,8 @@ void PotentialEnergy();
 void HydrostaticPressure();
 void Density();
 void LenzLaw();
+void game();
+void guide();
 
 //Dynamic Menu functions
 void color(int color)
@@ -410,20 +412,24 @@ void DynamicMenu()
 
         gotoxy(0, 10);
         color(SetColors[1]);
-        std::cout << " 2. Help" << std::endl;
+        std::cout << " 2. Game" << std::endl;
 
         gotoxy(0, 11);
         color(SetColors[2]);
+        std::cout << " 3. Guide" << std::endl;
+
+        gotoxy(0, 12);
+        color(SetColors[3]);
         std::cout << " 3. Exit" << std::endl;
 
 
         key = _getch();
 
-        if (key == 72 && (counter >= 2 && counter <= 3))//72 is for the up arrow
+        if (key == 72 && (counter >= 2 && counter <= 4))//72 is for the up arrow
         {
             counter--;
         }
-        if (key == 80 && (counter >= 1 && counter <= 2))//80 is for the down arrow
+        if (key == 80 && (counter >= 1 && counter <= 3))//80 is for the down arrow
         {
             counter++;
         }
@@ -438,7 +444,13 @@ void DynamicMenu()
             }
             if (counter == 2)
             {
-                std::cout << "Ferrum" << std::endl;
+                system("cls");
+                game();
+            }
+            if (counter == 3)
+            {
+                system("CLS");
+                guide();
             }
             if (counter == 3)
             {
@@ -466,6 +478,10 @@ void DynamicMenu()
         if (counter == 3)
         {
             SetColors[2] = 10;
+        }
+        if (counter == 4)
+        {
+            SetColors[3] = 10;
         }
     }
 }

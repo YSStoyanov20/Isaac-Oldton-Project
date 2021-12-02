@@ -44,17 +44,50 @@ void PrintWizard()
     std::cout << "            *###%###################*             " << std::endl << std::endl;
 }
 
+void WinScreen()
+{
+    std::cout << "          _______                      _______  _        _ " << std::endl;
+    std::cout << "|\\      /|(  ___ )|\\     /|  |\\     /|(  ___  )( (    /|( )" << std::endl;
+    std::cout << "( \\   / )| (   ) || )   ( |  | )   ( || (   ) ||  \\ (  || |" << std::endl;
+    std::cout << " \\ (_) / | |   | || |   | |  | | _ | || |   | ||   \\ | || |" << std::endl;
+    std::cout << "  \\   /  | |   | || |   | |  | |( )| || |   | || (\\ \\) || |" << std::endl;
+    std::cout << "   ) (   | |   | || |   | |  | || || || |   | || | \\   |(_)" << std::endl;
+    std::cout << "   | |   | (___) || (___) |  | () () || (___) || )  \\  | _ " << std::endl;
+    std::cout << "   \\_/   (_______)(_______)  (_______)(_______)|/    )_)(_)" << std::endl;
+    std::cout << "                                                           " << std::endl;
+}
+
+void DefeatScreen()
+{
+    std::cout << "  ______   _______  _______  _______  _______ _________ _ " << std::endl;
+    std::cout << " (  __  \\ (  ____ \\(  ____ \\(  ____ \\(  ___  )\\__   __/( )" << std::endl;
+    std::cout << " | (  \\  )| (    \\/| (    \\/| (    \\/| (   ) |   ) (   | |" << std::endl;
+    std::cout << " | |   ) || (__    | (__    | (__    | (___) |   | |   | |" << std::endl;
+    std::cout << " | |   | ||  __)   |  __)   |  __)   |  ___  |   | |   | |" << std::endl;
+    std::cout << " | |   ) || (      | (      | (      | (   ) |   | |   (_)" << std::endl;
+    std::cout << " | (__/  )| (____/\\\| )      | (____/ \| )   ( |   | |    _ " << std::endl;
+    std::cout << " (______/ (_______/|/       (_______/|/     \\|   )_(   (_)" << std::endl;
+    std::cout << "                                                            " << std::endl;
+    std::cout << " Returning to Main Menu..." << std::endl;
+}
+
 void checkHealth(int health)
 {
-    if (health == 0)
+    if (health <= 20)
     {
         system("cls");
-        std::cout << "You won! Congratulations! The Evil wizard got his powers removed and is now nothing more than dust.";
+        WinScreen();
+        Sleep(5000);
+        system("CLS");
+        homeScreen();
     }
     else
     {
-        system("cls");
-        std::cout << "You failed. The Evil Wizard has defeated you. Darkness and sorrow now reign the world.";
+        system("CLS");
+        DefeatScreen();
+        Sleep(5000);
+        system("CLS");
+        homeScreen();
     }
 }
 
@@ -87,6 +120,14 @@ void game()
     for (int i = 0; i <= 9; i++)
     {
         PrintWizard();
+        for (int j = 0; j < 150; j++)
+        {
+            std::cout << "-";
+        }
+
+        std::cout << std::endl << " Wizard's Health: " << health << "/ 100" << std::endl;
+        std::cout << " Question: " << i + 1 << " /10" << std::endl << std::endl;
+
         int rng = rand() % 10;
 
         while (questions[rng].isAsked == true)
@@ -94,7 +135,7 @@ void game()
             rng = rand() % 10;
         }
 
-        std::cout << questions[rng].text << std::endl;
+        std::cout << " " <<  questions[rng].text << std::endl;
 
         getline(std::cin, useranswer, '\n');
 
@@ -112,6 +153,7 @@ void game()
 
 void guide()
 {
+    system("cls");
     std::cout << "\t\t  _____                         ____  _     _ _              " << std::endl;
     std::cout << "\t\t |_   _|                       / __ \\| |   | | |             " << std::endl;
     std::cout << "\t\t   | |  ___  __ _  __ _  ___  | |  | | | __| | |_ ___  _ __  " << std::endl;

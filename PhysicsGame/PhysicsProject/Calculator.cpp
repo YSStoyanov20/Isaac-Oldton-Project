@@ -2,6 +2,8 @@
 #include <Windows.h>
 #include "Functions.h"
 
+
+//calculating functions
 void Acceleration()
 {
     double Velocity1, Velocity0, time, Acceleration;
@@ -12,7 +14,7 @@ void Acceleration()
     std::cout << "Enter Time: ";
     std::cin >> time;
     Acceleration = (Velocity1 - Velocity0) / time;
-    std::cout << "Acceleration = " << Acceleration << " m/s" << std::endl;
+    std::cout << "Acceleration = " << Acceleration << " m/s^2" << std::endl;
     Sleep(5000);
 }
 

@@ -2,7 +2,7 @@
 
 int main()
 {
-    system("mode 400");
+    ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
     LoadingScreen();
     homeScreen();
     DynamicMenu();

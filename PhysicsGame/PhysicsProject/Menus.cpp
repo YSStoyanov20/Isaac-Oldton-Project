@@ -56,12 +56,15 @@ void homeScreen()
 void load()
 {
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 8);
-    std::cout << "\t\t\t\t      BOOTING UP" << std::endl << std::endl << "\t\t\t";
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t          BOOTING UP" << std::endl << std::endl << "\t\t\t";
+
+    std::cout << "\t\t\t\t\t\t\t\t    ";
 
     for (int r = 1; r <= 19; r++)
     {
         Sleep(200);
         SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 11);
+        
         std::cout << (char)219u << " ";
     }
 }
@@ -69,60 +72,60 @@ void load()
 void boothUpScreen()
 {
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 9);
-    std::cout << std::endl;
-    std::cout << "\t              &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl; 
+    std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                 &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl; 
     Sleep(200);
-    std::cout << "\t             &&&&&&&&&&&&&&&&&&&&&&***********************            " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                &&&&&&&&&&&&&&&&&&&&&&***********************            " << std::endl;
     Sleep(200);
-    std::cout << "\t            &&&&                                       ****           " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t               &&&&                                       ****           " << std::endl;
     Sleep(200);
-    std::cout << "\t           &&&&    &&&&&&&&&&&&&&&&*****************    ****          " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t              &&&&    &&&&&&&&&&&&&&&&*****************    ****          " << std::endl;
     Sleep(200);
-    std::cout << "\t           &&&    &&&&&&&&&&&&&&&&&******************    ***          " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t              &&&    &&&&&&&&&&&&&&&&&******************    ***          " << std::endl;
     Sleep(200);
-    std::cout << "\t          &&&.   &&&&&&&&******&&&&*****&&&&&&********   ,***         " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t             &&&.   &&&&&&&&******&&&&*****&&&&&&********   ,***         " << std::endl;
     Sleep(200);
-    std::cout << "\t         &&&&   &&&&&&&&**&&&&&***/*%&&&*****&&********   ****        " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t            &&&&   &&&&&&&&**&&&&&***/*%&&&*****&&********   ****        " << std::endl;
     Sleep(200);
-    std::cout << "\t        &&&&   &&&&&&&&&**&&&&&&&&*%&********&&*********   ****       " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t           &&&&   &&&&&&&&&**&&&&&&&&*%&********&&*********   ****       " << std::endl;
     Sleep(200);
-    std::cout << "\t       &&&&    &&&&&&&&&**&&&&&&&&&*,********&&*********    ****      " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t          &&&&    &&&&&&&&&**&&&&&&&&&*,********&&*********    ****      " << std::endl;
     Sleep(200);
-    std::cout << "\t      .&&&    &&&&&&&&&&*******&&&   ***&&&&&&&,*********    ***      " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t         .&&&    &&&&&&&&&&*******&&&   ***&&&&&&&,*********    ***      " << std::endl;
     Sleep(200);
-    std::cout << "\t      &&&    &&&&&*****&&***&**&&&   ***&&*&&%**&&&&&*****    ***     " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t         &&&    &&&&&*****&&***&**&&&   ***&&*&&%**&&&&&*****    ***     " << std::endl;
     Sleep(200);
-    std::cout << "\t     &&&&   &&&&**&&&&&&&&%***&&&&   ****&&&*********&&****   ****    " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t        &&&&   &&&&**&&&&&&&&%***&&&&   ****&&&*********&&****   ****    " << std::endl;
     Sleep(200);
-    std::cout << "\t    &&&&   &&&&&***&&&&&&&****&&&&   ****&&&&*******&&&*****   ****   " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t       &&&&   &&&&&***&&&&&&&****&&&&   ****&&&&*******&&&*****   ****   " << std::endl;
     Sleep(200);
-    std::cout << "\t   &&&&   &&&&&&&&%*****&***&***&&   **&&&*&&&*&&&&&********,   ****  " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t      &&&&   &&&&&&&&%*****&***&***&&   **&&&*&&&*&&&&&********,   ****  " << std::endl;
     Sleep(200);
-    std::cout << "\t  &&&&    &&&&&&&&&&&&&&#******&&     **&&&&&&/**************    **** " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t     &&&&    &&&&&&&&&&&&&&#******&&     **&&&&&&/**************    **** " << std::endl;
     Sleep(200);
-    std::cout << "\t  &&&    &&&&&&&&&&&&&&&**&&&&&&****&&&******&&***************    *** " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t     &&&    &&&&&&&&&&&&&&&**&&&&&&****&&&******&&***************    *** " << std::endl;
     Sleep(200);
-    std::cout << "\t &&&&       &&&&&&&&&&&&**&&&&&&&&*%&********&&************       ****" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t    &&&&       &&&&&&&&&&&&**&&&&&&&&*%&********&&************       ****" << std::endl;
     Sleep(200);
-    std::cout << "\t   &&&&&&      &&&&&&&&&**&&&&&***&**&&&*****&&*********      ******  " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t      &&&&&&      &&&&&&&&&**&&&&&***&**&&&*****&&*********      ******  " << std::endl;
     Sleep(200);
-    std::cout << "\t      &&&&&&      .&&&&&&******&&&&*****&&&&&&******       ******     " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t         &&&&&&      .&&&&&&******&&&&*****&&&&&&******       ******     " << std::endl;
     Sleep(200);
-    std::cout << "\t          &&&&&&      &&&&&&&&&&&&&**************      ******         " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t             &&&&&&      &&&&&&&&&&&&&**************      ******         " << std::endl;
     Sleep(200);
-    std::cout << "\t             &&&&&&      &&&&&&&&&&**********,      ******            " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                &&&&&&      &&&&&&&&&&**********,      ******            " << std::endl;
     Sleep(200);
-    std::cout << "\t                *&&&&&(      &&&&&&*******      ,*****                " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                   *&&&&&(      &&&&&&*******      ,*****                " << std::endl;
     Sleep(200);
-    std::cout << "\t                    &&&&&&      &&&****      ******                   " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                       &&&&&&      &&&****      ******                   " << std::endl;
     Sleep(200);
-    std::cout << "\t                       &&&&&&             ******                      " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                          &&&&&&             ******                      " << std::endl;
     Sleep(200);
-    std::cout << "\t                           &&&&&&     ******                          " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                              &&&&&&     ******                          " << std::endl;
     Sleep(200);
-    std::cout << "\t                              &&&&&******                             " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                                 &&&&&******                             " << std::endl;
     Sleep(200);
-    std::cout << "\t                                  &**                                 " << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t                                     &**                                 " << std::endl << std::endl;
 
     load();
 }
@@ -131,7 +134,7 @@ void LoadingScreen()
 {
     boothUpScreen();
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 8);
-    std::cout << std::endl << std::endl << "\t\t\t       PRESS ANY KEY TO CONTINUE" << std::endl << std::endl << "\t\t\t";
+    std::cout << std::endl << std::endl << "\t\t\t\t\t\t\t\t\t\t\t          PRESS ANY KEY TO CONTINUE" << std::endl << std::endl << "\t\t\t";
     system("pause>null");
     system("cls");
 }
@@ -148,71 +151,71 @@ void CalcMenu()
 
         gotoxy(0, 1); //The coordinates for the options
         color(SetColors1[0]);
-        std::cout << "1. Acceleration" << std::endl;
+        std::cout << " 1. Acceleration" << std::endl;
 
         gotoxy(0, 2);
         color(SetColors1[1]);
-        std::cout << "2. Kinetic Energy" << std::endl;
+        std::cout << " 2. Kinetic Energy" << std::endl;
 
         gotoxy(0, 3);
         color(SetColors1[2]);
-        std::cout << "3. Mechanic Energy" << std::endl;
+        std::cout << " 3. Mechanic Energy" << std::endl;
 
         gotoxy(0, 4);
         color(SetColors1[3]);
-        std::cout << "4. Electricity" << std::endl;
+        std::cout << " 4. Electricity" << std::endl;
 
         gotoxy(0, 5);
         color(SetColors1[4]);
-        std::cout << "5. Voltage" << std::endl;
+        std::cout << " 5. Voltage" << std::endl;
 
         gotoxy(0, 6);
         color(SetColors1[5]);
-        std::cout << "6. Pressure" << std::endl;
+        std::cout << " 6. Pressure" << std::endl;
 
         gotoxy(0, 7);
         color(SetColors1[6]);
-        std::cout << "7. Distance" << std::endl;
+        std::cout << " 7. Distance" << std::endl;
 
         gotoxy(0, 8);
         color(SetColors1[7]);
-        std::cout << "8. Friction" << std::endl;
+        std::cout << " 8. Friction" << std::endl;
 
         gotoxy(0, 9);
         color(SetColors1[8]);
-        std::cout << "9. Principle of Archimed" << std::endl;
+        std::cout << " 9. Principle of Archimed" << std::endl;
 
         gotoxy(0, 10);
         color(SetColors1[9]);
-        std::cout << "10. Free Fall" << std::endl;
+        std::cout << " 10. Free Fall" << std::endl;
 
         gotoxy(0, 11);
         color(SetColors1[10]);
-        std::cout << "11. Mechanical Work" << std::endl;
+        std::cout << " 11. Mechanical Work" << std::endl;
 
         gotoxy(0, 12);
         color(SetColors1[11]);
-        std::cout << "12. Mechanical Power" << std::endl;
+        std::cout << " 12. Mechanical Power" << std::endl;
 
         gotoxy(0, 13);
         color(SetColors1[12]);
-        std::cout << "13. Mechanical Energy" << std::endl;
+        std::cout << " 13. Mechanical Energy" << std::endl;
 
         gotoxy(0, 14);
         color(SetColors1[13]);
-        std::cout << "14. Hydrostatic Pressure" << std::endl;
+        std::cout << " 14. Hydrostatic Pressure" << std::endl;
 
         gotoxy(0, 15);
         color(SetColors1[14]);
-        std::cout << "15. Density" << std::endl;
+        std::cout << " 15. Density" << std::endl;
 
         gotoxy(0, 16);
         color(SetColors1[15]);
-        std::cout << "16. Lenz's Law" << std::endl;
+        std::cout << " 16. Lenz's Law" << std::endl;
 
         gotoxy(0, 17);
         color(SetColors1[16]);
-        std::cout << "Return" << std::endl;
+        std::cout << " Return" << std::endl;
 
         key1 = _getch();// Getting the arrow key input
 

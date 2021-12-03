@@ -45,31 +45,34 @@ void PrintWizard()
 }
 void WinScreen()
 {
-    std::cout << "          _______                      _______  _        _ " << std::endl;
-    std::cout << "|\\      /|(  ___ )|\\     /|  |\\     /|(  ___  )( (    /|( )" << std::endl;
-    std::cout << "( \\   / )| (   ) || )   ( |  | )   ( || (   ) ||  \\ (  || |" << std::endl;
-    std::cout << " \\ (_) / | |   | || |   | |  | | _ | || |   | ||   \\ | || |" << std::endl;
-    std::cout << "  \\   /  | |   | || |   | |  | |( )| || |   | || (\\ \\) || |" << std::endl;
-    std::cout << "   ) (   | |   | || |   | |  | || || || |   | || | \\   |(_)" << std::endl;
-    std::cout << "   | |   | (___) || (___) |  | () () || (___) || )  \\  | _ " << std::endl;
-    std::cout << "   \\_/   (_______)(_______)  (_______)(_______)|/    )_)(_)" << std::endl;
-    std::cout << "                                                           " << std::endl;
-    std::cout << " Press any key to return to Menu..." << std::endl;
+    std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t          _______                      _______  _        _ " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t|\\      /|(  ___ )|\\     /|  |\\     /|(  ___  )( (    /|( )" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t( \\   / )| (   ) || )   ( |  | )   ( || (   ) ||  \\ (  || |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t \\ (_) / | |   | || |   | |  | | _ | || |   | ||   \\ | || |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t  \\   /  | |   | || |   | |  | |( )| || |   | || (\\ \\) || |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t   ) (   | |   | || |   | |  | || || || |   | || | \\   |(_)" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t   | |   | (___) || (___) |  | () () || (___) || )  \\  | _ " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t   \\_/   (_______)(_______)  (_______)(_______)|/    )_)(_)" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t                                                          " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t    Press any key to return to Menu..." << std::endl;
     system("pause>null");
 }
 
 void DefeatScreen()
 {
-    std::cout << "  ______   _______  _______  _______  _______ _________ _ " << std::endl;
-    std::cout << " (  __  \\ (  ____ \\(  ____ \\(  ____ \\(  ___  )\\__   __/( )" << std::endl;
-    std::cout << " | (  \\  )| (    \\/| (    \\/| (    \\/| (   ) |   ) (   | |" << std::endl;
-    std::cout << " | |   ) || (__    | (__    | (__    | (___) |   | |   | |" << std::endl;
-    std::cout << " | |   | ||  __)   |  __)   |  __)   |  ___  |   | |   | |" << std::endl;
-    std::cout << " | |   ) || (      | (      | (      | (   ) |   | |   (_)" << std::endl;
-    std::cout << " | (__/  )| (____/\\\| )      | (____/ \| )   ( |   | |    _ " << std::endl;
-    std::cout << " (______/ (_______/|/       (_______/|/     \\|   )_(   (_)" << std::endl;
-    std::cout << "                                                            " << std::endl;
-    std::cout << " Press any key to return to Menu..." << std::endl;
+    std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t  ______   _______  _______  _______  _______ _________ _ " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t (  __  \\ (  ____ \\(  ____ \\(  ____ \\(  ___  )\\__   __/( )" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t | (  \\  )| (    \\/| (    \\/| (    \\/| (   ) |   ) (   | |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |   ) || (__    | (__    | (__    | (___) |   | |   | |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |   | ||  __)   |  __)   |  __)   |  ___  |   | |   | |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t | |   ) || (      | (      | (      | (   ) |   | |   (_)" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t | (__/  )| (____/\\\| )      | (____/ \| )   ( |   | |    _ " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t (______/ (_______/|/       (_______/|/     \\|   )_(   (_)" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t                                                            " << std::endl;
+    std::cout << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t    Press any key to return to Menu..." << std::endl;
     system("pause>null");
 }
 
@@ -136,8 +139,8 @@ void game()
         questions[i].isAsked = false;
     }
 
-    //the true answers of the corresponding questions
-    std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "i*r", "F/S", "V*t","k*N","1/2*m*v*v","m*a","m*g*h*" };
+    //the correct answers of the corresponding questions
+    std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "i*r", "F/S", "v*t","k*N","(m*v*v)/2","m*g","m*g*h" };
 
     srand(time(NULL));
 

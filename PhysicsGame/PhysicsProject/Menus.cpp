@@ -50,6 +50,39 @@ void homeScreen()
     std::cout << "\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl;
 }
 
+void CalcMenuMag() {
+    std::cout << "          ..                               .:::.   " << std::endl;
+    std::cout << "    :+%@@@@%*-.                       .+:-:::::.  " << std::endl;
+    std::cout << "-*%@@@@@@@@@@@@#+-.                 .#*:@%-.:::  " << std::endl;
+    std::cout << "     .:=*%@@@@@@@@@@@*-             :--=--*::--=- " << std::endl;
+    std::cout << "          -%@@@@@@@@@@@@*.           ---:-=-=::   " << std::endl;
+    std::cout << "            -%@@@@@@@@@@@@%=         ::.          " << std::endl;
+    std::cout << "              *@@@@@@@#+**+*#.     .+*+           " << std::endl;
+    std::cout << "              +@@@@@+:-::=--#    .#%##*-          " << std::endl;
+    std::cout << "               :@@@%+:..:-:--*-   *#%#%%%#:       " << std::endl;
+    std::cout << "                ***+:..-:.=::-*=.+%#######%=     " << std::endl;
+    std::cout << "               ::-:--:-=-====:=*=%%#%%####%%=    " << std::endl;
+    std::cout << "              -:::::=::+==:::::=-:==+###*+==+=    " << std::endl;
+    std::cout << "            .::::::=##::-:..=--:+-:::+--          " << std::endl;
+    std::cout << "          .::::::::*:+%*++::++=*++::-=. .         " << std::endl;
+    std::cout << "         .::::::::*+::=+--===::----:=-.            " << std::endl;
+    std::cout << "         :.-::::++%#:::==-+*+=--=:=:=-            ____ _                                     ____      _            _       _                 " << std::endl;
+    std::cout << "           :---#%##%-:-:=:-=-::=:::=--           / ___| |__   ___   ___  ___  ___    __ _   / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __    _ " << std::endl;
+    std::cout << "          .##%+%#%%%#::-=::::::==::+            | |   | '_ \\ / _ \\ / _ \\/ __|/ _ \\  / _` | | |   / _` | |/ __| | | | |/ _` | __/ _ \\| '__|  (_)" << std::endl;
+    std::cout << "        -*%#%%####%#%.:*::.:::::+:-             | |___| | | | (_) | (_) \\__ \\  __/ | (_| | | |__| (_| | | (__| |_| | | (_| | || (_) | |      _ " << std::endl;
+    std::cout << "     -::%=+:+++==+##%=.+:.::::::=-=              \\____|_| |_|\\___/ \\___/|___/\___|   \\__,_|  \\____\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|     (_)" << std::endl;
+    std::cout << "      .**-=--::#%#####--::::::::-#:              " << std::endl;
+    std::cout << "      *%%%#*#%@@@%%%###::::::::=#%:              " << std::endl;
+    std::cout << "     :%%%#%##%*#%@@@@%##-::::::#%=               " << std::endl;
+    std::cout << "      %%#%##%=*####%%@@@%=::::+@%:               " << std::endl;
+    std::cout << "      %%#%%%+ %##%%%###%%%*::-%%#%.              " << std::endl;
+    std::cout << "     *%%%#- .%#####%%###%%=:#%##%=               " << std::endl;
+    std::cout << "       ::.   -%###%#######%#-%###%#              " << std::endl;
+    std::cout << "             *%############%%#####%=              " << std::endl;
+    std::cout << "            .%%#%##%#######%#######%-             " << std::endl;
+    std::cout << "            *###%###################*             " << std::endl << std::endl;
+}
+
 
 
 // Loading Screen
@@ -64,6 +97,7 @@ void load()
     {
         Sleep(200);
         SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 11);
+        Beep(261, 150);
         
         std::cout << (char)219u << " ";
     }
@@ -74,57 +108,57 @@ void boothUpScreen()
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 9);
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t                 &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl; 
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                &&&&&&&&&&&&&&&&&&&&&&***********************            " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t               &&&&                                       ****           " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t              &&&&    &&&&&&&&&&&&&&&&*****************    ****          " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t              &&&    &&&&&&&&&&&&&&&&&******************    ***          " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t             &&&.   &&&&&&&&******&&&&*****&&&&&&********   ,***         " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t            &&&&   &&&&&&&&**&&&&&***/*%&&&*****&&********   ****        " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t           &&&&   &&&&&&&&&**&&&&&&&&*%&********&&*********   ****       " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t          &&&&    &&&&&&&&&**&&&&&&&&&*,********&&*********    ****      " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t         .&&&    &&&&&&&&&&*******&&&   ***&&&&&&&,*********    ***      " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t         &&&    &&&&&*****&&***&**&&&   ***&&*&&%**&&&&&*****    ***     " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t        &&&&   &&&&**&&&&&&&&%***&&&&   ****&&&*********&&****   ****    " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t       &&&&   &&&&&***&&&&&&&****&&&&   ****&&&&*******&&&*****   ****   " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t      &&&&   &&&&&&&&%*****&***&***&&   **&&&*&&&*&&&&&********,   ****  " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t     &&&&    &&&&&&&&&&&&&&#******&&     **&&&&&&/**************    **** " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t     &&&    &&&&&&&&&&&&&&&**&&&&&&****&&&******&&***************    *** " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t    &&&&       &&&&&&&&&&&&**&&&&&&&&*%&********&&************       ****" << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t      &&&&&&      &&&&&&&&&**&&&&&***&**&&&*****&&*********      ******  " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t         &&&&&&      .&&&&&&******&&&&*****&&&&&&******       ******     " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t             &&&&&&      &&&&&&&&&&&&&**************      ******         " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                &&&&&&      &&&&&&&&&&**********,      ******            " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                   *&&&&&(      &&&&&&*******      ,*****                " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                       &&&&&&      &&&****      ******                   " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                          &&&&&&             ******                      " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                              &&&&&&     ******                          " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                                 &&&&&******                             " << std::endl;
-    Sleep(200);
+    Sleep(100);
     std::cout << "\t\t\t\t\t\t\t\t\t                                     &**                                 " << std::endl << std::endl;
 
     load();
@@ -146,74 +180,76 @@ void CalcMenu()
     int counter1 = 3;
     char key1;
 
+    CalcMenuMag();
+
     for (int i = 0;;)
     {
 
-        gotoxy(0, 1); //The coordinates for the options
+        gotoxy(0, 32); //The coordinates for the options
         color(SetColors1[0]);
         std::cout << " 1. Acceleration" << std::endl;
 
-        gotoxy(0, 2);
+        gotoxy(0, 33);
         color(SetColors1[1]);
         std::cout << " 2. Kinetic Energy" << std::endl;
 
-        gotoxy(0, 3);
+        gotoxy(0, 34);
         color(SetColors1[2]);
         std::cout << " 3. Mechanic Energy" << std::endl;
 
-        gotoxy(0, 4);
+        gotoxy(0, 35);
         color(SetColors1[3]);
         std::cout << " 4. Electricity" << std::endl;
 
-        gotoxy(0, 5);
+        gotoxy(0, 36);
         color(SetColors1[4]);
         std::cout << " 5. Voltage" << std::endl;
 
-        gotoxy(0, 6);
+        gotoxy(0, 37);
         color(SetColors1[5]);
         std::cout << " 6. Pressure" << std::endl;
 
-        gotoxy(0, 7);
+        gotoxy(0, 38);
         color(SetColors1[6]);
         std::cout << " 7. Distance" << std::endl;
 
-        gotoxy(0, 8);
+        gotoxy(0, 39);
         color(SetColors1[7]);
         std::cout << " 8. Friction" << std::endl;
 
-        gotoxy(0, 9);
+        gotoxy(0, 40);
         color(SetColors1[8]);
         std::cout << " 9. Principle of Archimed" << std::endl;
 
-        gotoxy(0, 10);
+        gotoxy(0, 41);
         color(SetColors1[9]);
         std::cout << " 10. Free Fall" << std::endl;
 
-        gotoxy(0, 11);
+        gotoxy(0, 42);
         color(SetColors1[10]);
         std::cout << " 11. Mechanical Work" << std::endl;
 
-        gotoxy(0, 12);
+        gotoxy(0, 43);
         color(SetColors1[11]);
         std::cout << " 12. Mechanical Power" << std::endl;
 
-        gotoxy(0, 13);
+        gotoxy(0, 44);
         color(SetColors1[12]);
         std::cout << " 13. Mechanical Energy" << std::endl;
 
-        gotoxy(0, 14);
+        gotoxy(0, 45);
         color(SetColors1[13]);
         std::cout << " 14. Hydrostatic Pressure" << std::endl;
 
-        gotoxy(0, 15);
+        gotoxy(0, 46);
         color(SetColors1[14]);
         std::cout << " 15. Density" << std::endl;
 
-        gotoxy(0, 16);
+        gotoxy(0, 47);
         color(SetColors1[15]);
         std::cout << " 16. Lenz's Law" << std::endl;
 
-        gotoxy(0, 17);
+        gotoxy(0, 48);
         color(SetColors1[16]);
         std::cout << " Return" << std::endl;
 
@@ -454,6 +490,7 @@ void DynamicMenu()
 
 
         key = _getch();
+        Beep(261, 100);
 
         if (key == 72 && (counter >= 2 && counter <= 4))//72 is for the up arrow
         {
@@ -516,3 +553,4 @@ void DynamicMenu()
         }
     }
 }
+

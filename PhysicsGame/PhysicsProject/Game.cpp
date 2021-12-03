@@ -10,6 +10,119 @@ struct QUESTIONS {
     bool isAsked;
 };
 
+
+std::string SelectCharacter()
+{
+    int arrow = 0;
+    bool choice = true;
+    std::string Characters[3] = { "Wilhelm", "Peter", "Maria" };
+    while (choice)
+    {
+        color(7);
+        std::cout << " Choose your character with Spacebar" << std::endl << std::endl;
+        if (arrow == 0)
+        {
+            color(9);
+            std::cout << " --> \t" << Characters[0] << std::endl;
+            color(8);
+            std::cout << " " << Characters[1] << std::endl;
+            std::cout << " " << Characters[2] << std::endl;
+        }
+
+        if (arrow == 1)
+        {
+            color(8);
+            std::cout << " " << Characters[0] << std::endl;
+            color(6);
+            std::cout << " --> \t" << Characters[1] << std::endl;
+            color(8);
+            std::cout << " " << Characters[2] << std::endl;
+        }
+        if (arrow == 2)
+        {
+            color(8);
+            std::cout << " " << Characters[0] << std::endl;
+            std::cout << " " << Characters[1] << std::endl;
+            color(13);
+            std::cout << " --> \t" << Characters[2] << std::endl;
+        }
+        color(7);
+
+        system("PAUSE>NULL");
+
+        if (GetAsyncKeyState(VK_UP))
+        {
+            if (arrow == 0)
+            {
+                Sleep(0);
+            }
+            else
+            {
+                arrow--;
+            }
+        }
+
+        if (GetAsyncKeyState(VK_DOWN))
+        {
+            if (arrow == 2)
+            {
+                Sleep(0);
+            }
+            else
+            {
+                arrow++;
+            }
+        }
+
+        if (GetAsyncKeyState(VK_SPACE))
+        {
+            if (arrow == 0)
+            {
+                system("CLS");
+                return Characters[0];
+            }
+            if (arrow == 1)
+            {
+                system("CLS");
+                return Characters[1];
+            }
+            if (arrow == 2)
+            {
+                system("CLS");
+                return Characters[2];
+            }
+        }
+        system("CLS");
+    }
+
+
+}
+
+std::string CharacterCheck(std::string CharName)
+{
+    srand(time(NULL));
+    int replique = rand() % 5;
+    if (CharName == "Wilhelm")
+    {
+        std::string Dialogue[5] = { "a", "b", "c", "d", "e" };
+        color(9);
+        return Dialogue[replique];
+    }
+    if (CharName == "Peter")
+    {
+        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
+        color(6);
+        return Dialogue[replique];
+    }
+    if (CharName == "Maria")
+    {
+        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
+        color(13);
+        return Dialogue[replique];
+    }
+}
+
+
 void PrintWizard()
 {
     std::cout << "          ..                               .:::.    " << std::endl;
@@ -95,25 +208,31 @@ void checkHealth(int health)
 }
 void Dialogue(int health)
 {
+    color(8);
     std::cout << " Isaac Evilton: ";
     if (health >= 80)
     {
+        color(5);
         std::cout << "Your knowledge does nothing to me!" << std::endl;
     }
     else if (health >= 60 && health < 80)
     {
+        color(5);
         std::cout << "Ooh, that hurt a bit!" << std::endl;
     }
     else if (health >= 40 && health < 60)
     {
+        color(12);
         std::cout << "Okay, you are stronger than I've thought!" << std::endl;
     }
     else if (health >= 20 && health < 40)
     {
+        color(12);
         std::cout << "But I am not letting you win!" << std::endl;
     }
     else if (health < 20)
     {
+        color(4);
         std::cout << "Ooooh.... I feel very weak....." << std::endl;
     }
 }
@@ -124,6 +243,8 @@ void game()
     int health = 100;
 
     std::string useranswer;
+    std::string Characters = SelectCharacter();
+    system("CLS");
 
     // questions
 
@@ -140,7 +261,7 @@ void game()
     }
 
     //the correct answers of the corresponding questions
-    std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "i*r", "F/S", "v*t","k*N","(m*v*v)/2","m*g","m*g*h" };
+    std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "I*r", "F/S", "V*t","k*N","(m*V*V)/2","m*g","m*g*h" };
 
     srand(time(NULL));
 
@@ -157,6 +278,11 @@ void game()
         std::cout << " Question: " << i + 1 << " /10" << std::endl << std::endl << " " << (char)249u;
         
         Dialogue(health);
+        color(7);
+
+        std::cout << " " << Characters << ": " << CharacterCheck(Characters) << std::endl;
+        color(7);
+        std::cout << std::endl;
 
         int rng = rand() % 10;
 

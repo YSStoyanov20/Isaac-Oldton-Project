@@ -88,7 +88,7 @@ void CalcMenuMag() {
 // Loading Screen
 void load()
 {
-    SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 8);
+    color(8);
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t          BOOTING UP" << std::endl << std::endl << "\t\t\t";
 
     std::cout << "\t\t\t\t\t\t\t\t    ";
@@ -96,7 +96,7 @@ void load()
     for (int r = 1; r <= 19; r++)
     {
         Sleep(200);
-        SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 11);
+        color(11);
         Beep(261, 150);
         
         std::cout << (char)219u << " ";
@@ -105,7 +105,7 @@ void load()
 
 void boothUpScreen()
 {
-    SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 9);
+    color(9);
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t                 &&&&&&&&&&&&&&&&&&&&&**********************             " << std::endl; 
     Sleep(100);

@@ -10,7 +10,7 @@ struct QUESTIONS {
     bool isAsked;
 };
 
-
+// Functions to Select character
 std::string SelectCharacter()
 {
     int arrow = 0;
@@ -97,26 +97,26 @@ std::string SelectCharacter()
 
 
 }
-
+// Function to print character dialogue
 std::string CharacterCheck(std::string CharName)
 {
     srand(time(NULL));
     int replique = rand() % 5;
     if (CharName == "Wilhelm")
     {
-        std::string Dialogue[5] = { "a", "b", "c", "d", "e" };
+        std::string Dialogue[4] = { "Heh, you are not conquering the Earth!", "Did you think it's that easy?", "Back to your dimension!", "Haha, this won't stop me!"};
         color(9);
         return Dialogue[replique];
     }
     if (CharName == "Peter")
     {
-        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
+        std::string Dialogue[4] = { "For the Earth!", "I will free us from your Tyranny!", "I am not letting you win!", "Get out of here!" };
         color(6);
         return Dialogue[replique];
     }
     if (CharName == "Maria")
     {
-        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
+        std::string Dialogue[5] = { "Haha, go home old man!", "No one is smarter than Maria!", "Bravo, good try, but I  won!", "Your questions make me laugh"};
         color(13);
         return Dialogue[replique];
     }
@@ -156,6 +156,7 @@ void PrintWizard()
     std::cout << "            .%%#%##%#######%#######%-             " << std::endl;
     std::cout << "            *###%###################*             " << std::endl << std::endl;
 }
+
 void WinScreen()
 {
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
@@ -189,6 +190,7 @@ void DefeatScreen()
     system("pause>null");
 }
 
+// Function to check if game is won
 void checkHealth(int health)
 {
     if (health <= 20)
@@ -206,6 +208,7 @@ void checkHealth(int health)
         homeScreen();
     }
 }
+// Function to print Wizard's dialogue according to his hp
 void Dialogue(int health)
 {
     color(8);
@@ -260,7 +263,7 @@ void game()
         questions[i].isAsked = false;
     }
 
-    //the correct answers of the corresponding questions
+    // the correct answers of the corresponding questions
     std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "I*r", "F/S", "V*t","k*N","(m*V*V)/2","m*g","m*g*h" };
 
     srand(time(NULL));
@@ -305,7 +308,6 @@ void game()
     checkHealth(health);
 
 }
-
 void guide()
 {
     std::cout << "\t\t  _____                         ____  _     _ _              " << std::endl;

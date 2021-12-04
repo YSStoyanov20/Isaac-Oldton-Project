@@ -3,7 +3,7 @@
 #include "Functions.h"
 
 
-//calculating functions
+// Calculating functions
 void Acceleration()
 {
     double Velocity1, Velocity0, time, Acceleration;

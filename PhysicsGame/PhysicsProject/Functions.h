@@ -12,6 +12,7 @@ void PrintWizard();
 void checkHealth(int health);
 void game();
 void guide();
+void CalcMenuMag();
 
 // Menu Functions & Loading screen
 void LoadingScreen();

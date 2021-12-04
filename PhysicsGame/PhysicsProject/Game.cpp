@@ -10,7 +10,7 @@ struct QUESTIONS {
     bool isAsked;
 };
 
-// Functions to Select character
+
 std::string SelectCharacter()
 {
     int arrow = 0;
@@ -97,26 +97,26 @@ std::string SelectCharacter()
 
 
 }
-// Function to print character dialogue
+
 std::string CharacterCheck(std::string CharName)
 {
     srand(time(NULL));
     int replique = rand() % 5;
     if (CharName == "Wilhelm")
     {
-        std::string Dialogue[4] = { "Heh, you are not conquering the Earth!", "Did you think it's that easy?", "Back to your dimension!", "Haha, this won't stop me!"};
+        std::string Dialogue[5] = { "a", "b", "c", "d", "e" };
         color(9);
         return Dialogue[replique];
     }
     if (CharName == "Peter")
     {
-        std::string Dialogue[4] = { "For the Earth!", "I will free us from your Tyranny!", "I am not letting you win!", "Get out of here!" };
+        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
         color(6);
         return Dialogue[replique];
     }
     if (CharName == "Maria")
     {
-        std::string Dialogue[5] = { "Haha, go home old man!", "No one is smarter than Maria!", "Bravo, good try, but I  won!", "Your questions make me laugh"};
+        std::string Dialogue[5] = { "f", "g", "h", "w", "j" };
         color(13);
         return Dialogue[replique];
     }
@@ -156,7 +156,6 @@ void PrintWizard()
     std::cout << "            .%%#%##%#######%#######%-             " << std::endl;
     std::cout << "            *###%###################*             " << std::endl << std::endl;
 }
-
 void WinScreen()
 {
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
@@ -190,7 +189,6 @@ void DefeatScreen()
     system("pause>null");
 }
 
-// Function to check if game is won
 void checkHealth(int health)
 {
     if (health <= 20)
@@ -208,7 +206,6 @@ void checkHealth(int health)
         homeScreen();
     }
 }
-// Function to print Wizard's dialogue according to his hp
 void Dialogue(int health)
 {
     color(8);
@@ -263,7 +260,7 @@ void game()
         questions[i].isAsked = false;
     }
 
-    // the correct answers of the corresponding questions
+    //the correct answers of the corresponding questions
     std::string trueAnswers[10] = { "(V-V0)/t", "S/t", "W/V", "I*r", "F/S", "V*t","k*N","(m*V*V)/2","m*g","m*g*h" };
 
     srand(time(NULL));
@@ -308,6 +305,7 @@ void game()
     checkHealth(health);
 
 }
+
 void guide()
 {
     std::cout << "\t\t  _____                         ____  _     _ _              " << std::endl;
@@ -317,7 +315,15 @@ void guide()
     std::cout << "\t\t  _| |_\\__ \\ (_| | (_| | (__  | |__| | | (_| | || (_) | | | |" << std::endl;
     std::cout << "\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl << std::endl;
 
-    std::cout << "   This is a guide for Isaac Oldton: The Game" << std::endl << std::endl;
+    std::cout << " \t\t\tThis is a guide for Isaac Oldton: The Game" << std::endl << std::endl;
+
+    std::cout << "\t\t\t\t Story and Characters " << std::endl << std::endl;;
+    std::cout << "  Isaac Evilton is a magician who comes from the distant planet of Asimnea, far far away of the Earth." << std::endl;
+    std::cout << " We don't know how he may have arrived on our planet, but we know this: he wants to conquer us with his evil powers." << std::endl;
+    std::cout << " His powers are known to hypnotize people and then use them as his weapons. Peter, who comes from Russia, " << std::endl;
+    std::cout << " Wilhelm from Germany,and Maria from Bulgaria are three of the last few  who dare to stand against him." << std::endl;
+    std::cout << " They find out Evilton is a good physicist, and so they make a deal with the wizard: " << std::endl;
+    std::cout << " If they solve his riddle, he will go away and free the Earth...." << std::endl << std::endl;
     std::cout << " * If you have to write a number that is raised to a power, write like this: " << std::endl;
     std::cout << " * X^2 => x*x, X^3 => x*x*x and so on..." << std::endl;
     std::cout << " * To write a fractional number, type it as x/y." << std::endl << std::endl;

@@ -42,15 +42,19 @@ void gotoxy(int x, int y)
 // ASCII Art and Graphic elements
 void homeScreen()
 {
-    std::cout << "\t\t  _____                         ____  _     _ _              " << std::endl;
-    std::cout << "\t\t |_   _|                       / __ \\| |   | | |             " << std::endl;
-    std::cout << "\t\t   | |  ___  __ _  __ _  ___  | |  | | | __| | |_ ___  _ __  " << std::endl;
-    std::cout << "\t\t   | | / __|/ _` |/ _` |/ __| | |  | | |/ _` | __/ _ \\| '_ \\ " << std::endl;
-    std::cout << "\t\t  _| |_\\__ \\ (_| | (_| | (__  | |__| | | (_| | || (_) | | | |" << std::endl;
-    std::cout << "\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl;
+    SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 9);
+    std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t  _____                         ____  _     _ _              " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t |_   _|                       / __ \\| |   | | |             " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t   | |  ___  __ _  __ _  ___  | |  | | | __| | |_ ___  _ __  " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t   | | / __|/ _` |/ _` |/ __| | |  | | |/ _` | __/ _ \\| '_ \\ " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t  _| |_\\__ \\ (_| | (_| | (__  | |__| | | (_| | || (_) | | | |" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl;
 }
 
-void CalcMenuMag() {
+void CalcMenuMag() 
+{
+    system("CLS");
     std::cout << "          ..                               .:::.   " << std::endl;
     std::cout << "    :+%@@@@%*-.                       .+:-:::::.  " << std::endl;
     std::cout << "-*%@@@@@@@@@@@@#+-.                 .#*:@%-.:::  " << std::endl;
@@ -97,7 +101,6 @@ void load()
     {
         Sleep(200);
         color(11);
-        Beep(261, 150);
         
         std::cout << (char)219u << " ";
     }
@@ -179,11 +182,12 @@ void CalcMenu()
     int SetColors1[] = { 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7 }; // DEFAULT COLORS
     int counter1 = 3;
     char key1;
-
+    
     CalcMenuMag();
 
     for (int i = 0;;)
     {
+       
 
         gotoxy(0, 32); //The coordinates for the options
         color(SetColors1[0]);
@@ -391,74 +395,74 @@ void CalcMenu()
         SetColors1[16] = 7;
 
 
-        // If our counter equals to one of the corresponding numbers for the menu the color is changed to green which is 10
+        // If our counter equals to one of the corresponding numbers for the menu the color is changed to blue which is 9
         if (counter1 == 1)
         {
-            SetColors1[0] = 10;
+            SetColors1[0] = 9;
         }
         if (counter1 == 2)
         {
-            SetColors1[1] = 10;
+            SetColors1[1] = 9;
         }
         if (counter1 == 3)
         {
-            SetColors1[2] = 10;
+            SetColors1[2] = 9;
         }
         if (counter1 == 4)
         {
-            SetColors1[3] = 10;
+            SetColors1[3] = 9;
         }
         if (counter1 == 5)
         {
-            SetColors1[4] = 10;
+            SetColors1[4] = 9;
         }
         if (counter1 == 6)
         {
-            SetColors1[5] = 10;
+            SetColors1[5] = 9;
         }
         if (counter1 == 7)
         {
-            SetColors1[6] = 10;
+            SetColors1[6] = 9;
         }
         if (counter1 == 8)
         {
-            SetColors1[7] = 10;
+            SetColors1[7] = 9;
         }
         if (counter1 == 9)
         {
-            SetColors1[8] = 10;
+            SetColors1[8] = 9;
         }
         if (counter1 == 10)
         {
-            SetColors1[9] = 10;
+            SetColors1[9] = 9;
         }
         if (counter1 == 11)
         {
-            SetColors1[10] = 10;
+            SetColors1[10] = 9;
         }
         if (counter1 == 12)
         {
-            SetColors1[11] = 10;
+            SetColors1[11] = 9;
         }
         if (counter1 == 13)
         {
-            SetColors1[12] = 10;
+            SetColors1[12] = 9;
         }
         if (counter1 == 14)
         {
-            SetColors1[13] = 10;
+            SetColors1[13] = 9;
         }
         if (counter1 == 15)
         {
-            SetColors1[14] = 10;
+            SetColors1[14] = 9;
         }
         if (counter1 == 16)
         {
-            SetColors1[15] = 10;
+            SetColors1[15] = 9;
         }
         if (counter1 == 17)
         {
-            SetColors1[16] = 10;
+            SetColors1[16] = 9;
         }
     }
 }
@@ -472,25 +476,24 @@ void DynamicMenu()
 
     for (int i = 0;;)
     {
-        gotoxy(0, 9); //The coordinates for the options
+        gotoxy(100, 17); //The coordinates for the options
         color(SetColors[0]);
         std::cout << " 1. Calculator Menu" << std::endl;
 
-        gotoxy(0, 10);
+        gotoxy(100, 18);
         color(SetColors[1]);
         std::cout << " 2. Game" << std::endl;
 
-        gotoxy(0, 11);
+        gotoxy(100, 19);
         color(SetColors[2]);
         std::cout << " 3. Guide" << std::endl;
 
-        gotoxy(0, 12);
+        gotoxy(100, 20);
         color(SetColors[3]);
         std::cout << " 4. Exit" << std::endl;
 
 
         key = _getch();
-        Beep(261, 100);
 
         if (key == 72 && (counter >= 2 && counter <= 4))//72 is for the up arrow
         {
@@ -534,23 +537,22 @@ void DynamicMenu()
         SetColors[4] = 7;
 
 
-        //if our counter equals to one of the corresponding numbers for the menu the color is changed to green which is 10
+        //if our counter equals to one of the corresponding numbers for the menu the color is changed to blue which is 9
         if (counter == 1)
         {
-            SetColors[0] = 10;
+            SetColors[0] = 9;
         }
         if (counter == 2)
         {
-            SetColors[1] = 10;
+            SetColors[1] = 9;
         }
         if (counter == 3)
         {
-            SetColors[2] = 10;
+            SetColors[2] = 9;
         }
         if (counter == 4)
         {
-            SetColors[3] = 10;
+            SetColors[3] = 9;
         }
     }
 }
-

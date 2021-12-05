@@ -15,7 +15,7 @@ std::string SelectCharacter()
 {
     int arrow = 0;
     bool choice = true;
-    std::string Characters[3] = {"\t\t\t\t\t\t\t\t\t" "Wilhelm", "Peter", "Maria" };
+    std::string Characters[3] = { "Wilhelm", "Peter", "Maria" };
     while (choice)
     {
         color(7);

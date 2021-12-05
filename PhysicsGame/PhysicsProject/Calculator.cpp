@@ -53,6 +53,8 @@ void Acceleration()
     gotoxy(100, 15);
     std::cout << "Acceleration = " << Acceleration << " m/s^2" << std::endl;
     Sleep(5000);
+    system("CLS");
+    CalcMenuMag();
 }
 
 void KineticEnergy()

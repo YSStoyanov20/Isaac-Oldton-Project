@@ -49,7 +49,8 @@ void homeScreen()
     std::cout << "\t\t\t\t\t\t\t\t\t\t   | |  ___  __ _  __ _  ___  | |  | | | __| | |_ ___  _ __  " << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t   | | / __|/ _` |/ _` |/ __| | |  | | |/ _` | __/ _ \\| '_ \\ " << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t  _| |_\\__ \\ (_| | (_| | (__  | |__| | | (_| | || (_) | | | |" << std::endl;
-    std::cout << "\t\t\t\t\t\t\t\t\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t |_____|___/\\__,_|\\__,_|\\___|  \\____/|_|\\__,_|\\__\\___/|_| |_|" << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t                  Press Enter to continue ... " << std::endl;  
 }
 
 void CalcMenuMag() 
@@ -441,7 +442,7 @@ void LoadingScreen()
 {
     boothUpScreen();
     SetConsoleTextAttribute((HANDLE)GetStdHandle(STD_OUTPUT_HANDLE), 8);
-    std::cout << std::endl << std::endl << "\t\t\t\t\t\t\t\t\t\t\t          PRESS ANY KEY TO CONTINUE" << std::endl << std::endl << "\t\t\t";
+    std::cout << std::endl << std::endl << "\t\t\t\t\t\t\t\t\t\t\t            PRESS ENTER TO CONTINUE" << std::endl << std::endl << "\t\t\t";
     system("pause>null");
     system("cls");
 }
@@ -453,11 +454,11 @@ void CalcMenu()
     int counter1 = 3;
     char key1;
     
-    CalcMenuMag();
 
     for (int i = 0;;)
     {
        
+        CalcMenuMag();
 
         gotoxy(0, 32); //The coordinates for the options
         color(SetColors1[0]);
@@ -526,6 +527,7 @@ void CalcMenu()
         gotoxy(0, 48);
         color(SetColors1[16]);
         std::cout << " Return" << std::endl;
+        color(7);
 
         key1 = _getch();// Getting the arrow key input
 

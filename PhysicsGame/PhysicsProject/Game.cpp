@@ -101,7 +101,7 @@ std::string SelectCharacter()
 std::string CharacterCheck(std::string CharName)
 {
     srand(time(NULL));
-    int replique = rand() % 5;
+    int replique = rand() % 4;
     if (CharName == "Wilhelm")
     {
         std::string Dialogue[4] = { "Heh, you are not conquering the Earth!", "Did you think it's that easy?", "Back to your dimension!", "Haha, this won't stop me!"};
@@ -110,13 +110,13 @@ std::string CharacterCheck(std::string CharName)
     }
     if (CharName == "Peter")
     {
-        std::string Dialogue[4] = { "For the Earth!", "I will free us from your Tyranny!", "I am not letting you win!", "Get out of here!" };
+        std::string Dialogue[4] = { "For the Earth!", "I will free us from your tyranny!", "I am not letting you win!", "Get out of here!" };
         color(6);
         return Dialogue[replique];
     }
     if (CharName == "Maria")
     {
-        std::string Dialogue[5] = { "Haha, go home old man!", "No one is smarter than Maria!", "Bravo, good try, but I am not giving up!", "Your questions make me laugh"};
+        std::string Dialogue[4] = { "Haha, go home old man!", "No one is smarter than Maria!", "Bravo, good try, but I am not giving up!", "Your questions make me laugh"};
         color(13);
         return Dialogue[replique];
     }
@@ -168,11 +168,12 @@ void WinScreen()
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t   | |   | (___) || (___) |  | () () || (___) || )  \\  | _ " << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t   \\_/   (_______)(_______)  (_______)(_______)|/    )_)(_)" << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t                                                          " << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t     Isaac Evilton has been defeated  " << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t    Press any key to return to Menu..." << std::endl;
     system("pause>null");
 }
 
-void DefeatScreen()
+void DefeatScreen(int health)
 {
     std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t  ______   _______  _______  _______  _______ _________ _ " << std::endl;
@@ -184,7 +185,7 @@ void DefeatScreen()
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t | (__/  )| (____/\\\| )      | (____/ \| )   ( |   | |    _ " << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t (______/ (_______/|/       (_______/|/     \\|   )_(   (_)" << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t                                                            " << std::endl;
-    std::cout << std::endl << std::endl << std::endl << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t     Isaac Evilton has survived on " << health << " health"  << std::endl;
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t    Press any key to return to Menu..." << std::endl;
     system("pause>null");
 }
@@ -201,7 +202,7 @@ void checkHealth(int health)
     else
     {
         system("CLS");
-        DefeatScreen();
+        DefeatScreen(health);
         system("cls");
         homeScreen();
     }
@@ -275,7 +276,7 @@ void game()
         }
 
         std::cout << std::endl << " Wizard's Health: " << health << "/100" << std::endl;
-        std::cout << " Question: " << i + 1 << " /10" << std::endl << std::endl << " " << (char)249u;
+        std::cout << " Question: " << i + 1 << "/10" << std::endl << std::endl << " " << (char)249u;
         
         Dialogue(health);
         color(7);
@@ -325,7 +326,7 @@ void guide()
     std::cout << " Wilhelm from Germany,and Maria from Bulgaria are three of the last few  who dare to stand against him." << std::endl;
     std::cout << " They find out Evilton is a good physicist, and so they make a deal with the wizard: " << std::endl;
     std::cout << " If they solve his riddle, he will go away and free the Earth...." << std::endl << std::endl
-        ;
+        ;  
     std::cout << "\t\t\t\t Tips for formulas" << std::endl << std::endl;
 
     std::cout << " * If you have to write a number that is raised to a power, write like this: " << std::endl;

@@ -3,8 +3,8 @@
 </p>
 
 <p align ="center">
-   <img src = "https://img.shields.io/github/languages/count/PDMatsaliev20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/contributors/PDMatsaliev20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/repo-size/PDMatsaliev20/Isaac-Oldton-Project?style=for-the-badge">  
-   <img src = "https://img.shields.io/github/last-commit/PDMatsaliev20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/languages/top/PDMatsaliev20/Isaac-Oldton-Project?style=for-the-badge">
+   <img src = "https://img.shields.io/github/languages/count/YSStoyanov20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/contributors/YSStoyanov20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/repo-size/YSStoyanov20/Isaac-Oldton-Project?style=for-the-badge">  
+   <img src = "https://img.shields.io/github/last-commit/YSStoyanov20/Isaac-Oldton-Project?style=for-the-badge"> <img src = "https://img.shields.io/github/languages/top/YSStoyanov20/Isaac-Oldton-Project?style=for-the-badge">
   </p>
    
 

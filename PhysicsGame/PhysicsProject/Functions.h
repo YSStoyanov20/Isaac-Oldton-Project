@@ -38,3 +38,8 @@ void PotentialEnergy();
 void HydrostaticPressure();
 void Density();
 void LenzLaw();
+void Kmph_To_Mps();
+void Newtons_To_Kilonewtons();
+void Pascal_To_Kilopascal();
+void Joules_To_Kilojoules();
+void Watts_To_Kilowatts();

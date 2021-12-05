@@ -353,3 +353,98 @@ void LenzLaw()
     std::cout << "Density = " << LenzLaw << " J" << std::endl;
     Sleep(5000);
 }
+
+void Kmph_To_Mps()
+{
+    PrintCalculator();
+    double mps, kmph;
+
+    gotoxy(100, 12);
+    std::cout << "Enter Kilometers Per Hour: ";
+    std::cin >> kmph;
+
+    mps = kmph * 0.277778;
+
+    gotoxy(100, 15);
+    std::cout << "The speed in meters per second is: " << mps << " m/s" <<  std::endl;
+    Sleep(5000);
+
+    system("CLS");
+    CalcMenu();
+}
+
+void Newtons_To_Kilonewtons()
+{
+    PrintCalculator();
+    double newtons, kilonewtons;
+
+    gotoxy(100, 12);
+    std::cout << "Enter Newtons: ";
+    std::cin >> newtons;
+
+    kilonewtons = newtons / 1000;
+       
+    gotoxy(100, 15);
+    std::cout << "Kilonewtons = " << kilonewtons << "kN";
+    Sleep(5000);
+
+    system("CLS");
+    CalcMenu();
+}
+
+void Pascal_To_Kilopascal()
+{
+    PrintCalculator();
+    double pascals, kilopascal;
+
+    gotoxy(100, 12);
+    std::cout << "Enter Newtons: ";
+    std::cin >> pascals;
+
+    kilopascal = pascals / 1000;
+
+    gotoxy(100, 15);
+    std::cout << "Kilopascals = " << kilopascal << "kPa";
+    Sleep(5000);
+
+    system("CLS");
+    CalcMenu();
+}
+
+void Joules_To_Kilojoules()
+{
+    PrintCalculator();
+    double joules, kilojoules;
+
+    gotoxy(100, 12);
+    std::cout << "Enter Joules: ";
+    std::cin >> joules;
+
+    kilojoules = joules / 1000;
+
+    gotoxy(100, 15);
+    std::cout << "Kilojoules = " << kilojoules << "kJ";
+    Sleep(5000);
+
+    system("CLS");
+    CalcMenu();
+}
+
+void Watts_To_Kilowatts()
+{
+    PrintCalculator();
+    double watts, kilowatts;
+
+    gotoxy(100, 12);
+    std::cout << "Enter Watts: ";
+    std::cin >> watts;
+
+    kilowatts = watts / 1000;
+
+    gotoxy(100, 15);
+    std::cout << "Kilowatts = " << kilowatts << "kW";
+    Sleep(5000);
+
+    system("CLS");
+    CalcMenu();
+}

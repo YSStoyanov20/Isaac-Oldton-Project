@@ -22,6 +22,11 @@ void Density();
 void LenzLaw();
 void game();
 void guide();
+void Kmph_To_Mps();
+void Newtons_To_Kilonewtons();
+void Pascal_To_Kilopascal();
+void Joules_To_Kilojoules();
+void Watts_To_Kilowatts();
 
 //Dynamic Menu functions
 void color(int color)
@@ -97,12 +102,10 @@ void load()
     std::cout << "\t\t\t\t\t\t\t\t\t\t\t\t          BOOTING UP" << std::endl << std::endl << "\t\t\t";
 
     std::cout << "\t\t\t\t\t\t\t\t    ";
-
     for (int r = 1; r <= 19; r++)
     {
         Sleep(200);
-        color(11);
-        
+        color(9);
         std::cout << (char)219u << " ";
     }
 }
@@ -450,7 +453,7 @@ void LoadingScreen()
 // Calculator Menu
 void CalcMenu()
 {
-    int SetColors1[] = { 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7 }; // DEFAULT COLORS
+    int SetColors1[] = { 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7 }; // DEFAULT COLORS
     int counter1 = 3;
     char key1;
     
@@ -526,16 +529,36 @@ void CalcMenu()
 
         gotoxy(0, 48);
         color(SetColors1[16]);
+        std::cout << " 17. Kmp/h To m/s" << std::endl;
+
+        gotoxy(0, 49);
+        color(SetColors1[17]);
+        std::cout << " 18. Newtons To Kilonewtons" << std::endl;
+
+        gotoxy(0, 50);
+        color(SetColors1[18]);
+        std::cout << " 19. Pascal To Kilopascal" << std::endl;
+
+        gotoxy(0, 51);
+        color(SetColors1[19]);
+        std::cout << " 20. Joules To Kilojoules" << std::endl;
+
+        gotoxy(0, 52);
+        color(SetColors1[20]);
+        std::cout << " 21. Watts To Kilowatts" << std::endl;
+
+        gotoxy(0, 53);
+        color(SetColors1[21]);
         std::cout << " Return" << std::endl;
         color(7);
 
         key1 = _getch();// Getting the arrow key input
 
-        if (key1 == 72 && (counter1 >= 2 && counter1 <= 17))// 72 is for the up arrow
+        if (key1 == 72 && (counter1 >= 2 && counter1 <= 22))// 72 is for the up arrow
         {
             counter1--;
         }
-        if (key1 == 80 && (counter1 >= 1 && counter1 <= 16))//80 is for the down arrow
+        if (key1 == 80 && (counter1 >= 1 && counter1 <= 21))//80 is for the down arrow
         {
             counter1++;
         }
@@ -640,6 +663,36 @@ void CalcMenu()
             }
             if (counter1 == 17)
             {
+                system("CLS");
+                Kmph_To_Mps();
+                system("CLS");
+            }
+            if (counter1 == 18)
+            {
+                system("CLS");
+                Newtons_To_Kilonewtons();
+                system("CLS");
+            }
+            if (counter1 == 19)
+            {
+                system("CLS");
+                Pascal_To_Kilopascal();
+                system("CLS");
+            }
+            if (counter1 == 20)
+            {
+                system("CLS");
+                Joules_To_Kilojoules();
+                system("CLS");
+            }
+            if (counter1 == 21)
+            {
+                system("CLS");
+                Watts_To_Kilowatts();
+                system("CLS");
+            }
+            if (counter1 == 22)
+            {
                 SetColors1[0] = 7;
                 system("CLS");
                 color(7);
@@ -665,6 +718,12 @@ void CalcMenu()
         SetColors1[14] = 7;
         SetColors1[15] = 7;
         SetColors1[16] = 7;
+        SetColors1[17] = 7;
+        SetColors1[18] = 7;
+        SetColors1[19] = 7;
+        SetColors1[20] = 7;
+        SetColors1[21] = 7;
+        SetColors1[22] = 7;
 
 
         // If our counter equals to one of the corresponding numbers for the menu the color is changed to blue which is 9
@@ -735,6 +794,26 @@ void CalcMenu()
         if (counter1 == 17)
         {
             SetColors1[16] = 9;
+        }
+        if (counter1 == 18)
+        {
+            SetColors1[17] = 9;
+        }
+        if (counter1 == 19)
+        {
+            SetColors1[18] = 9;
+        }
+        if (counter1 == 20)
+        {
+            SetColors1[19] = 9;
+        }
+        if (counter1 == 21)
+        {
+            SetColors1[20] = 9;
+        }
+        if (counter1 == 22)
+        {
+            SetColors1[21] = 9;
         }
     }
 }

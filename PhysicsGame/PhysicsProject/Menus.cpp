@@ -28,13 +28,12 @@ void Pascal_To_Kilopascal();
 void Joules_To_Kilojoules();
 void Watts_To_Kilowatts();
 
-//Dynamic Menu functions
-void color(int color)
+void color(int color)//Adds Colors to the text
 {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
-void gotoxy(int x, int y)
+void gotoxy(int x, int y)//Based on Coordinates x/y
 {
     COORD coordinates;
     coordinates.X = x;
@@ -562,7 +561,7 @@ void CalcMenu()
         {
             counter1++;
         }
-        if (key1 == '\r')// carriage return
+        if (key1 == '\r')// carriage return aka reset the position of the device to the beginning of a line of text
         {
             // If enter is clicked and highlight is on one of the options the program will run the code there
             if (counter1 == 1)
@@ -854,7 +853,7 @@ void DynamicMenu()
         {
             counter++;
         }
-        if (key == '\r')//carriage return
+        if (key == '\r')//carriage return aka reset the position of the device to the beginning of a line of text
         {
             // if enter is clicked and highlight is on one of the options the program will run the code there
 

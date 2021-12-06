@@ -166,7 +166,7 @@ void Distance()
     PrintCalculator();
     double Velocity, time, Displacement;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Velocity: ";
     std::cin >> Velocity;
 
@@ -185,7 +185,7 @@ void FrictionForce()
     PrintCalculator();
     double coefficient, Newtons, friction;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Coefficient: ";
     std::cin >> coefficient;
 
@@ -204,7 +204,7 @@ void ArchimedPrinciple()
 {
     PrintCalculator();
     double Rho, Volume, EarthAcceleration = 10, ArchimedPrinciple;
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Density: ";
     std::cin >> Rho;
 
@@ -223,7 +223,7 @@ void FreeFall()
     PrintCalculator();
     double time, EarthAcceleration = 10, Distance, Velocity;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter time: ";
     std::cin >> time;
 
@@ -241,7 +241,7 @@ void Mechanicalwork()
     PrintCalculator();
     double MechanicalWork, Friction, Distance;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Friction: ";
     std::cin >> Friction;
 
@@ -260,7 +260,7 @@ void MechanicalPower()
     PrintCalculator();
     double Work, time, Power;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Work: ";
     std::cin >> Work;
 
@@ -279,7 +279,7 @@ void PotentialEnergy()
     PrintCalculator();
     double Mass, EarthAcceleration = 10, height, Energy;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Mass: ";
     std::cin >> Mass;
 
@@ -298,7 +298,7 @@ void HydrostaticPressure()
     PrintCalculator();
     double Rho, EarthAcceleration = 10, height, HydroRho;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Density: ";
     std::cin >> Rho;
 
@@ -317,7 +317,7 @@ void Density()
     PrintCalculator();
     double Mass, Volume, Density;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Mass: ";
     std::cin >> Mass;
 
@@ -336,7 +336,7 @@ void LenzLaw()
     PrintCalculator();
     double Ampers, Resistance, time, LenzLaw;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Ampers: ";
     std::cin >> Ampers;
 
@@ -359,14 +359,14 @@ void Kmph_To_Mps()
     PrintCalculator();
     double mps, kmph;
 
-    gotoxy(100, 12);
-    std::cout << "Enter Kilometers Per Hour: ";
+    gotoxy(100, 12);//Coordinates of the outputs
+    std::cout << "Enter Kmph: ";
     std::cin >> kmph;
 
     mps = kmph * 0.277778;
 
     gotoxy(100, 15);
-    std::cout << "The speed in meters per second is: " << mps << " m/s" <<  std::endl;
+    std::cout << "Meters Per Second =" << mps << " m/s" <<  std::endl;
     Sleep(5000);
 
     system("CLS");
@@ -378,13 +378,13 @@ void Newtons_To_Kilonewtons()
     PrintCalculator();
     double newtons, kilonewtons;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Newtons: ";
     std::cin >> newtons;
 
     kilonewtons = newtons / 1000;
        
-    gotoxy(100, 15);
+    gotoxy(100, 15);//Coordinates of the outputs
     std::cout << "Kilonewtons = " << kilonewtons << "kN";
     Sleep(5000);
 
@@ -397,7 +397,7 @@ void Pascal_To_Kilopascal()
     PrintCalculator();
     double pascals, kilopascal;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Newtons: ";
     std::cin >> pascals;
 
@@ -416,7 +416,7 @@ void Joules_To_Kilojoules()
     PrintCalculator();
     double joules, kilojoules;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Joules: ";
     std::cin >> joules;
 
@@ -435,7 +435,7 @@ void Watts_To_Kilowatts()
     PrintCalculator();
     double watts, kilowatts;
 
-    gotoxy(100, 12);
+    gotoxy(100, 12);//Coordinates of the outputs
     std::cout << "Enter Watts: ";
     std::cin >> watts;
 

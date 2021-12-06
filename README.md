@@ -29,7 +29,7 @@ A daring wizard challenges you to a game. Do you think you can win against him? 
 #
 
 # 📄 [Documentation](https://github.com/YSStoyanov20/Isaac-Oldton-Project/tree/main/Documentation)
-# 📄 [QA Documentation]()
+# 📄 [QA Documentation](https://github.com/YSStoyanov20/Isaac-Oldton-Project/blob/main/Documentation/QA_documentation.xlsx)
 
 
 # 📨 Installation

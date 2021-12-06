@@ -33,9 +33,21 @@ A daring wizard challenges you to a game. Do you think you can win against him? 
 
 
 # 📨 Installation
+
+* <b>Step 1</b>
+```
+  mkdir Isaac-Oldton
+```
+* <b>Step 2</b>
+```
+  cd Isaac-Oldton
+```
+* <b>Step 3</b>
 ```
   git clone https://github.com/YSStoyanov20/Isaac-Oldton-Project.git
 ```
+<p><b>Locate to the folder you cloned the repository and open the project.</b></p>
+
 # Used Technologies
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png" width = "40"> <img src = "https://1000logos.net/wp-content/uploads/2020/08/Visual-Studio-Logo.png" width = "75"> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" width = "45">
 
